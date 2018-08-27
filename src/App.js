@@ -1,25 +1,18 @@
 import React from 'react';
 
-import { Query } from 'react-apollo';
+import Header from './components/Header';
 
-import HELLO from './queries';
+import PostScreen from './screens/PostScreen';
 
 class App extends React.Component {
     render() {
         return (
-            <Query
-                query={HELLO}
-            >
-                {({loading, error, data}) => {
-                    if (loading) return <p>Loading...</p>;
-                    if (error) return <p>Error : {error}</p>;
-
-                    return (
-                        <div>HELLO APP.js {data.hi}</div>
-                    );
-                }}
-
-            </Query>
+            <React.Fragment>
+                <Header />
+                <main role="main" className="container">
+                    <PostScreen />
+                </main>
+            </React.Fragment>
         );
     }
 }

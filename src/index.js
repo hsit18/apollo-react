@@ -9,7 +9,7 @@ import ApolloClient from 'apollo-boost';
 import App from './App';
 
 const client = new ApolloClient({
-    uri: 'http://evening-tor-29203.herokuapp.com/graphql',
+    uri: 'https://7lw5x7q58j.lp.gql.zone/graphql',
 });
 
 /** render APP */
