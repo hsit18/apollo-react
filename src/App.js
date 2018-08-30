@@ -9,7 +9,7 @@ class App extends React.Component {
         return (
             <React.Fragment>
                 <Header />
-                <main role="main" className="container">
+                <main role="main" className="container mt-3">
                     <PostScreen />
                 </main>
             </React.Fragment>

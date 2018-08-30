@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack-dev-server --hot --progress --colors --inline"
+    "dev": "webpack-dev-server --hot --progress --colors --inline",
+    "build": "node_modules/.bin/webpack -p"
   },
   "repository": "git+https://gitlab.com/reactjs-apps/apollo-react.git",
   "author": "Harpreet Singh <harpreet.singh@globant.com>",
