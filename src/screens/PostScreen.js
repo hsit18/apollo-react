@@ -16,7 +16,7 @@ class PostScreen extends Component {
                 >
                     {({ loading, error, data }) => {
                         if (loading) return <div className="alert alert-info"> Loading posts...</div>;
-                        if (error) return <div className="alert alert-danger"> Error Graphql ...</div>;
+                        if (error) return <div className="alert alert-danger"> Graphql Errors ...</div>;
 
                         return data.posts.map(post => <Post key={post.id} post={post} />);
                     }}
