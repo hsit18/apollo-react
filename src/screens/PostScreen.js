@@ -22,7 +22,6 @@ class PostScreen extends Component {
                     }}
                 </Query>
             </React.Fragment>
-            
         );
     }
 }
