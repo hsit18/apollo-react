@@ -15,3 +15,14 @@ pages:
   
   only:
   - master
+
+pages:
+  stage: deploy
+  script:
+    - mkdir public
+    - mv dist/* public
+  artifacts:
+    paths:
+      - public
+  only:
+    - master
